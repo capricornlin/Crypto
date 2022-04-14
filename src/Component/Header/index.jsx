@@ -125,7 +125,7 @@ const Header = () => {
                   <News />
                 </div>
               </div>
-              <div className="flex">
+              <div className="flex mx-5">
                 {!currentUser && (
                   <div className="mx-2">
                     <SigninNav />
