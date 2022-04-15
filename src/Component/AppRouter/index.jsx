@@ -6,6 +6,7 @@ import News from "../../Pages/News";
 import CryptoDetail from "../../Component/CryptoDetail";
 import Signin from "../Signin";
 import Register from "../Register";
+import NotFound from "../NotFound";
 
 export default function Approuter() {
   return (
@@ -17,6 +18,7 @@ export default function Approuter() {
         <Route path="/Cryptocurrencies/:coinId" element={<CryptoDetail />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </>
   );
